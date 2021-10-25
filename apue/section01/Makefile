@@ -1,11 +1,14 @@
 CFLAGS=-Wall -fsanitize=address,undefined
 OBJECTS = \
-	directory_entry
+	directory_entry \
+	echo_print \
+	getpid \
+	run_command \
+	perror \
+	uid_gid \
+	run_command_with_signal
 
 all: $(OBJECTS)
-
-directory_entry: directory_entry.c
-	$(CC) $(CFLAGS) -o directory_entry directory_entry.c
 
 .PHONY: clean
 clean:
