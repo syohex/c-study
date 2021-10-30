@@ -7,3 +7,5 @@
 *.lib
 *.pdb
 *.exp
+*.a
+*.o
